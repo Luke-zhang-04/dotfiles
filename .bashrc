@@ -529,4 +529,8 @@ fi
 alias pacman=yay
 neofetch
 
+PATH=$PATH:~/node_modules/.bin
+PATH=$PATH:~/bin
+PATH=$PATH:/bin
+
 source ~/.ombrc
