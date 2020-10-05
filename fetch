@@ -7,6 +7,7 @@ mkdir -pv ./usr/share/conky
 
 cp -rv ~/.Xresources ./~/.Xresources &
 cp -rv ~/.config/i3/ ./~/.config/ &
+cp -rv ~/.config/fish ./~/.config &
 cp -rv /usr/share/conky/ ./usr/share/ &
 cp -v ~/.gitconfig ./~/.gitconfig &
 cp -v ~/.bashrc ./~/.bashrc &
@@ -14,5 +15,6 @@ cp -v ~/.devilspie/vscode_transparent.ds ./~/.devilspie/vscode_transparent.ds &
 cp -v ~/.ombrc ./~/.ombrc &
 cp -v ~/.xinitrc ./~/.xinitrc &
 cp -v ~/.Xmodmap ./~/.Xmodmap &
+cp -v ~/.zshrc ./~/.zshrc &
 
 wait
