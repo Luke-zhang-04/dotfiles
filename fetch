@@ -4,6 +4,6 @@
 mkdir -pv ./.config/i3
 
 cp -rv ~/.Xresources ./.Xresources &
-cp -rv ~/.config/i3/ ./.config/i3/ &
+cp -rv ~/.config/i3/ ./.config/ &
 
 wait
