@@ -17,3 +17,4 @@ cp -v ~/.ombrc ./~/.ombrc
 cp -v ~/.xinitrc ./~/.xinitrc
 cp -v ~/.Xmodmap ./~/.Xmodmap
 cp -v ~/.zshrc ./~/.zshrc
+cp -v ~/.config/picom.conf ./~/.config/picom.conf
