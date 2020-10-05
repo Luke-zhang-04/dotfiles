@@ -7,3 +7,4 @@ mkdir -pv ./usr/share/conky
 cp -rv ~/.Xresources ./~/.Xresources
 cp -rv ~/.config/i3/ ./~/.config/
 cp -rv /usr/share/conky/ ./usr/share/
+cp -rv ~/.gitconfig ./~/.gitconfig

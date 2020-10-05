@@ -1,0 +1,13 @@
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[user]
+    name = Luke-zhang-04
+    email = luke.zhang2004dev@gmail.com
+    signingkey = 61BCE27146B1B0B9
+[gpg]
+    program = gpg2
+[commit]
+    gpgsign = true
