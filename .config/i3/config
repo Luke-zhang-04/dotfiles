@@ -160,14 +160,17 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # Mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # Increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 #Decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 20 # Increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20 #Decrease screen brightness
 
 # Media controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
+# Keyboard backlight
+bindsym XF86KbdBrightnessUp exec --no-startup-id sudo keyboard-backlight up
+bindsym XF86KbdBrughtnessDown exec --no-startup-id sudo keyboard-backlight down
 
 ###########################
 # Window related bindings #
