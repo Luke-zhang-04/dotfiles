@@ -1,9 +1,9 @@
 #! /bin/bash
 # Fetch files and cp
 
-mkdir -pv ./.config/i3
+mkdir -pv ./~/.config/i3
 mkdir -pv ./usr/share/conky
 
-cp -rv ~/.Xresources ./.Xresources
-cp -rv ~/.config/i3/ ./.config/
+cp -rv ~/.Xresources ./~/.Xresources
+cp -rv ~/.config/i3/ ./~/.config/
 cp -rv /usr/share/conky/ ./usr/share/
