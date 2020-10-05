@@ -13,5 +13,6 @@ cp -v ~/.bashrc ./~/.bashrc &
 cp -v ~/.devilspie/vscode_transparent.ds ./~/.devilspie/vscode_transparent.ds &
 cp -v ~/.ombrc ./~/.ombrc &
 cp -v ~/.xinitrc ./~/.xinitrc &
+cp -v ~/.Xmodmap ./~/.Xmodmap &
 
 wait
