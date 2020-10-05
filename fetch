@@ -1,0 +1,9 @@
+#! /bin/bash
+# Fetch files and cp them
+
+mkdir -pv ./.config/i3
+
+cp -rv ~/.Xresources ./.Xresources &
+cp -rv ~/.config/i3/ ./.config/i3/ &
+
+wait
