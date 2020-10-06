@@ -22,7 +22,6 @@ ln -v ~/.config/omf/* ./.config/omf/
 ln -v /usr/share/conky/* ./conky/
 ln -v ~/.gitconfig ./.gitconfig
 ln -v ~/.bashrc ./.bashrc
-ln -v ~/.devilspie/transparent-apps.ds ./.devilspie/transparent-apps.ds
 ln -v ~/.ombrc ./.ombrc
 ln -v ~/.xinitrc ./.xinitrc
 ln -v ~/.Xmodmap ./.Xmodmap

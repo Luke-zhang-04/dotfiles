@@ -326,7 +326,7 @@ URxvt.font:                       xft:Dejavu Sans Mono For Powerline
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [81]#05151a
+URxvt.background:                 [100]#05151a
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
