@@ -1,22 +1,31 @@
 #! /bin/bash
-# Fetch files and cp
+# Fetch files and ln
 
 mkdir -pv ./.config/i3
 mkdir -pv ./.config/dunst
+mkdir -pv ./.config/fish
+mkdir -pv ./.config/fish/functions
+mkdir -pv ./.config/fish/conf.d
+mkdir -pv ./.config/omf
 mkdir -pv ./.devilspie
-mkdir -pv ./usr/share/conky
+mkdir -pv ./conky
 
-cp -rv ~/.Xresources ./.Xresources
-cp -rv ~/.config/i3/ ./.config/
-cp -rv ~/.config/fish ./.config
-cp -rv ~/.config/omf ./.config
-cp -rv /usr/share/conky/ ./
-cp -v ~/.gitconfig ./.gitconfig
-cp -v ~/.bashrc ./.bashrc
-cp -v ~/.devilspie/transparent-apps.ds ./.devilspie/transparent-apps.ds
-cp -v ~/.ombrc ./.ombrc
-cp -v ~/.xinitrc ./.xinitrc
-cp -v ~/.Xmodmap ./.Xmodmap
-cp -v ~/.zshrc ./.zshrc
-cp -v ~/.config/picom.conf ./.config/picom.conf
-cp -v ~/.config/dunst/dunstrc ./.config/dunst/dunstrc
+ln -v ~/.Xresources ./.Xresources
+ln -v ~/.config/i3/* ./.config/i3
+
+ln -v ~/.config/fish/config.fish ./.config/fish/config.fish
+ln -v ~/.config/fish/fish_variables ./.config/fish/fish_variables
+ln -v ~/.config/fish/functions/* ./.config/fish/functions/
+ln -v ~/.config/fish/conf.d/* ./.config/fish/conf.d/
+
+ln -v ~/.config/omf/* ./.config/omf/
+ln -v /usr/share/conky/* ./conky/
+ln -v ~/.gitconfig ./.gitconfig
+ln -v ~/.bashrc ./.bashrc
+ln -v ~/.devilspie/transparent-apps.ds ./.devilspie/transparent-apps.ds
+ln -v ~/.ombrc ./.ombrc
+ln -v ~/.xinitrc ./.xinitrc
+ln -v ~/.Xmodmap ./.Xmodmap
+ln -v ~/.zshrc ./.zshrc
+ln -v ~/.config/picom.conf ./.config/picom.conf
+ln -v ~/.config/dunst/dunstrc ./.config/dunst/dunstrc
