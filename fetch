@@ -3,6 +3,7 @@
 
 mkdir -pv ./.config/i3
 mkdir -pv ./.config/dunst
+mkdir -pv ./.config/redshift
 mkdir -pv ./.config/fish
 mkdir -pv ./.config/fish/functions
 mkdir -pv ./.config/fish/conf.d
@@ -10,21 +11,22 @@ mkdir -pv ./.config/omf
 mkdir -pv ./.devilspie
 mkdir -pv ./conky
 
-ln -v ~/.Xresources ./.Xresources
-ln -v ~/.config/i3/* ./.config/i3
+ln -v ~/.Xresources ./.Xresources || true
+ln -v ~/.config/i3/* ./.config/i3 || true
 
-ln -v ~/.config/fish/config.fish ./.config/fish/config.fish
-ln -v ~/.config/fish/fish_variables ./.config/fish/fish_variables
-ln -v ~/.config/fish/functions/* ./.config/fish/functions/
-ln -v ~/.config/fish/conf.d/* ./.config/fish/conf.d/
+ln -v ~/.config/fish/config.fish ./.config/fish/config.fish || true
+ln -v ~/.config/fish/fish_variables ./.config/fish/fish_variables || true
+ln -v ~/.config/fish/functions/* ./.config/fish/functions/ || true
+ln -v ~/.config/fish/conf.d/* ./.config/fish/conf.d/ || true
 
-ln -v ~/.config/omf/* ./.config/omf/
-ln -v /usr/share/conky/* ./conky/
-ln -v ~/.gitconfig ./.gitconfig
-ln -v ~/.bashrc ./.bashrc
-ln -v ~/.ombrc ./.ombrc
-ln -v ~/.xinitrc ./.xinitrc
-ln -v ~/.Xmodmap ./.Xmodmap
-ln -v ~/.zshrc ./.zshrc
-ln -v ~/.config/picom.conf ./.config/picom.conf
-ln -v ~/.config/dunst/dunstrc ./.config/dunst/dunstrc
+ln -v ~/.config/omf/* ./.config/omf/ || true
+ln -v /usr/share/conky/* ./conky/ || true
+ln -v ~/.gitconfig ./.gitconfig || true
+ln -v ~/.bashrc ./.bashrc || true
+ln -v ~/.ombrc ./.ombrc || true
+ln -v ~/.xinitrc ./.xinitrc || true
+ln -v ~/.Xmodmap ./.Xmodmap || true
+ln -v ~/.zshrc ./.zshrc || true
+ln -v ~/.config/picom.conf ./.config/picom.conf || true
+ln -v ~/.config/dunst/dunstrc ./.config/dunst/dunstrc || true
+ln -v ~/.config/redshift/redshift.conf ./.config/redshift/redshift.conf || true
