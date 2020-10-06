@@ -2,6 +2,7 @@
 # Fetch files and cp
 
 mkdir -pv ./.config/i3
+mkdir -pv ./.config/dunst
 mkdir -pv ./.devilspie
 mkdir -pv ./usr/share/conky
 
@@ -12,9 +13,10 @@ cp -rv ~/.config/omf ./.config
 cp -rv /usr/share/conky/ ./
 cp -v ~/.gitconfig ./.gitconfig
 cp -v ~/.bashrc ./.bashrc
-cp -v ~/.devilspie/vscode_transparent.ds ./.devilspie/vscode_transparent.ds
+cp -v ~/.devilspie/transparent-apps.ds ./.devilspie/transparent-apps.ds
 cp -v ~/.ombrc ./.ombrc
 cp -v ~/.xinitrc ./.xinitrc
 cp -v ~/.Xmodmap ./.Xmodmap
 cp -v ~/.zshrc ./.zshrc
 cp -v ~/.config/picom.conf ./.config/picom.conf
+cp -v ~/.config/dunst/dunstrc ./.config/dunst/dunstrc
