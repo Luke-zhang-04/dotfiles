@@ -532,5 +532,6 @@ neofetch
 PATH=$PATH:~/node_modules/.bin
 PATH=$PATH:~/bin
 PATH=$PATH:/bin
+PATH=$PATH:~/.local/bin
 
 source ~/.ombrc

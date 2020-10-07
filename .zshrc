@@ -103,3 +103,6 @@ alias pacman="yay"
 PATH=$PATH:~/node_modules
 PATH=$PATH:~/bin
 PATH=$PATH:/bin
+PATH=$PATH:~/.local/bin
+
+neofetch

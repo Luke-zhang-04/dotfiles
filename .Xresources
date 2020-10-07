@@ -26,11 +26,11 @@ XTerm*selectToClipboard: true
 
 ############################
 
-#define t_bg_floor     #010000
-#define t_bg_dip       #2B2B28
-#define t_background   #32312E
-#define t_bg_bump      #3F3E3B
-#define t_fg_comment   #7F7F83
+#define t_bg_floor     #000010
+#define t_bg_dip       #373737
+#define t_background   #212121
+#define t_bg_bump      #373737
+#define t_fg_comment   #545454
 #define t_foreground   #A6A7AA
 #define t_fg_highlight #B6B7BB
 #define t_fg_ceiling   #FEFFFF
@@ -39,9 +39,6 @@ XTerm*selectToClipboard: true
 ! BLK
 URxvt.color0: t_bg_bump
 URxvt.color8: t_fg_comment
-
-! WHT
-URxvt.color7: t_fg_highlight
 URxvt.color15: t_fg_ceiling
 
 ! RED
@@ -326,7 +323,7 @@ URxvt.font:                       xft:Dejavu Sans Mono For Powerline
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [100]#05151a
+URxvt.background:                 [100]#212121
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true

@@ -8,7 +8,6 @@ mkdir -pv ./.config/fish
 mkdir -pv ./.config/fish/functions
 mkdir -pv ./.config/fish/conf.d
 mkdir -pv ./.config/omf
-mkdir -pv ./.devilspie
 mkdir -pv ./conky
 
 ln -v ~/.Xresources ./.Xresources || true
