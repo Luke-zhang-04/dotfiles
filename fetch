@@ -8,8 +8,8 @@ mkdir -pv ./.config/fish
 mkdir -pv ./.config/fish/functions
 mkdir -pv ./.config/fish/conf.d
 mkdir -pv ./.config/omf
+mkdir -pv ./.config/conky
 mkdir -pv ./.vim/colors/material-dark/vim
-mkdir -pv ./conky
 
 link () {
     ln -v ~/"$1" ./"$1" || true
@@ -24,7 +24,6 @@ ln -v ~/.config/fish/functions/* ./.config/fish/functions/ || true
 ln -v ~/.config/fish/conf.d/* ./.config/fish/conf.d/ || true
 
 ln -v ~/.config/omf/* ./.config/omf/ || true
-ln -v /usr/share/conky/* ./conky/ || true
 link .gitconfig
 link .bashrc
 link .ombrc
@@ -41,5 +40,8 @@ link .vim/colors/material-dark.js
 link .vim/colors/material-dark.vim
 link .vim/colors/material-dark/README.md
 link .vim/colors/material-dark/vim/ThemerVim.vim
+
+link .config/conky/conky_maia
+link .config/conky/conky1.10_shortcuts
 
 pacman -Qnqe > ./aur-packages
