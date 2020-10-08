@@ -1,5 +1,5 @@
 #!/bin/bash
 
-themer -c ./material-dark.js -t @themer/vim -o ./material-dark
+themer -c ~/.vim/colors/material-dark.js -t @themer/vim -o ~/.vim/colors/material-dark
 
-cp ./material-dark/vim/ThemerVim.vim ./material-dark.vim
+cp ~/.vim/colors/material-dark/vim/ThemerVim.vim ~/.vim/colors/material-dark.vim

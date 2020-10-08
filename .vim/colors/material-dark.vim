@@ -3,23 +3,23 @@
   
   if &background == 'dark'
     
-  let s:guishade0 = "#282629"
-  let s:guishade1 = "#474247"
-  let s:guishade2 = "#656066"
-  let s:guishade3 = "#847e85"
-  let s:guishade4 = "#a29da3"
-  let s:guishade5 = "#c1bcc2"
-  let s:guishade6 = "#e0dce0"
-  let s:guishade7 = "#fffcff"
-  let s:guiaccent0 = "#ff4050"
-  let s:guiaccent1 = "#f28144"
-  let s:guiaccent2 = "#ffd24a"
-  let s:guiaccent3 = "#a4cc35"
-  let s:guiaccent4 = "#26c99e"
-  let s:guiaccent5 = "#66bfff"
-  let s:guiaccent6 = "#cc78fa"
-  let s:guiaccent7 = "#f553bf"
-  let s:ctermshade0 = 235
+  let s:guishade0 = "#212121"
+  let s:guishade1 = "#3e4141"
+  let s:guishade2 = "#5c6060"
+  let s:guishade3 = "#798080"
+  let s:guishade4 = "#96a0a0"
+  let s:guishade5 = "#b3c0c0"
+  let s:guishade6 = "#d1dfdf"
+  let s:guishade7 = "#eeffff"
+  let s:guiaccent0 = "#f07178"
+  let s:guiaccent1 = "#f78c6c"
+  let s:guiaccent2 = "#ffcb6b"
+  let s:guiaccent3 = "#c3e88d"
+  let s:guiaccent4 = "#89ddff"
+  let s:guiaccent5 = "#89ddff"
+  let s:guiaccent6 = "#89ddff"
+  let s:guiaccent7 = "#c792ea"
+  let s:ctermshade0 = 234
   let s:ctermshade1 = 238
   let s:ctermshade2 = 241
   let s:ctermshade3 = 244
@@ -27,14 +27,14 @@
   let s:ctermshade5 = 250
   let s:ctermshade6 = 253
   let s:ctermshade7 = 231
-  let s:ctermaccent0 = 204
-  let s:ctermaccent1 = 215
-  let s:ctermaccent2 = 221
-  let s:ctermaccent3 = 149
-  let s:ctermaccent4 = 79
-  let s:ctermaccent5 = 117
-  let s:ctermaccent6 = 177
-  let s:ctermaccent7 = 212
+  let s:ctermaccent0 = 210
+  let s:ctermaccent1 = 216
+  let s:ctermaccent2 = 222
+  let s:ctermaccent3 = 193
+  let s:ctermaccent4 = 153
+  let s:ctermaccent5 = 153
+  let s:ctermaccent6 = 153
+  let s:ctermaccent7 = 183
   
   endif
   
