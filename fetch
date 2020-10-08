@@ -41,3 +41,5 @@ link .vim/colors/material-dark.js
 link .vim/colors/material-dark.vim
 link .vim/colors/material-dark/README.md
 link .vim/colors/material-dark/vim/ThemerVim.vim
+
+pacman -Qnqe > ./aur-packages
