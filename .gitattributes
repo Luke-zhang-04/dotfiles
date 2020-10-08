@@ -4,7 +4,7 @@
 .config/conky/conky_maia linguist-language=Lua
 .config/conky/conky1.10_shortcuts linguist-language=Lua
 
-.config/dunst/dunstrc linguist-detactable=true
+.config/dunst/dunstrc linguist-detectable=true
 .config/dunst/dunstrc linguist-language=INI
 
-*.conf linguist-detactable=true
+*.conf linguist-detectable=true
