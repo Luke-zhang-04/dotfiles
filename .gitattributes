@@ -1,2 +1,10 @@
 # Enforce Unix newlines
 * text=auto eol=lf
+
+.config/conky/conky_maia linguist-language=lua
+.config/conky/conky1.10_shortcuts linguist-language=lua
+
+.config/dunst/dunstrc linguist-detactable=true
+.config/dunst/dunstrc linguist-language=ini
+
+*.conf linguist-detactable=true
