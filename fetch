@@ -1,6 +1,7 @@
 #! /bin/bash
-# Fetch files and ln
+# Get various "dotfiles" and move them around
 
+# Make directories
 mkdir -pv ./.config/i3
 mkdir -pv ./.config/dunst
 mkdir -pv ./.config/redshift
@@ -11,41 +12,52 @@ mkdir -pv ./.config/omf
 mkdir -pv ./.config/conky
 mkdir -pv ./.vim/colors/material-dark/vim
 
+
+# Hard link a file from ~ to .
 link () {
     ln -v ~/"$1" ./"$1" || true
 }
 
-link .Xresources
-ln -v ~/.config/i3/* ./.config/i3 || true
 
-link .config/fish/config.fish
-link .config/fish/fish_variables
+# Hard link files
+
+# Fish
+ln -v ~/.config/i3/* ./.config/i3 || true
 ln -v ~/.config/fish/functions/* ./.config/fish/functions/ || true
 ln -v ~/.config/fish/conf.d/* ./.config/fish/conf.d/ || true
-
 ln -v ~/.config/omf/* ./.config/omf/ || true
+link .config/fish/config.fish
+link .config/fish/fish_variables
+
+# Other config
+link .config/picom.conf
+link .config/dunst/dunstrc
+link .config/redshift/redshift.conf
+
+# Misc
+link .Xresources
 link .gitconfig
 link .bashrc
 link .ombrc
 link .xinitrc
 link .Xmodmap
 link .zshrc
-link .config/picom.conf
-link .config/dunst/dunstrc
-link .config/redshift/redshift.conf
 link .vimrc
 
+# Vim
 link .vim/colors/build
 link .vim/colors/material-dark.js
 link .vim/colors/material-dark.vim
 link .vim/colors/material-dark/README.md
 link .vim/colors/material-dark/vim/ThemerVim.vim
 
+# Conky
 link .config/conky/conky_maia
 link .config/conky/conky1.10_shortcuts
 
+
+# List packages
 pacman -Qnqe > ./aur-packages
 
-NPMPackages="$(npm list -g --depth=0 --parseable=true | sed "s/\/usr\/lib\/node_modules\///g")"
-
-tail -n +2 <<< "$NPMPackages" > ./npm-packages
+NPMPackages="$(npm list -g --depth=0 --parseable=true | sed "s/\/usr\/lib\/node_modules\///g")" # List NPM Pacakges
+tail -n +2 <<< "$NPMPackages" > ./npm-packages # Get rid of first line (/usr/lib)
