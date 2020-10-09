@@ -63,6 +63,9 @@ link .config/polybar/config.ini
 # Bin
 ln ~/bin/* ./bin || true
 
+# Libinput
+link .config/libinput-gestures.conf
+
 
 # List packages
 pacman -Qnqe > ./aur-packages
