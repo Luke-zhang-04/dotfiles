@@ -34,11 +34,13 @@ gpm
 grep
 groff
 gthumb
+gucharmap
 gzip
 i3-gaps
 i3status
 intel-media-driver
 intel-ucode
+libmpdclient
 libtool
 libva-intel-driver
 linux
@@ -47,6 +49,7 @@ lxappearance
 m4
 maim
 make
+mpd
 mtools
 mysql-workbench
 nautilus
