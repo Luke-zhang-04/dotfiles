@@ -10,6 +10,7 @@ mkdir -pv ./.config/fish/functions
 mkdir -pv ./.config/fish/conf.d
 mkdir -pv ./.config/omf
 mkdir -pv ./.config/conky
+mkdir -pv ./.config/polybar
 mkdir -pv ./.vim/colors/material-dark/vim
 
 
@@ -54,6 +55,9 @@ link .vim/colors/material-dark/vim/ThemerVim.vim
 # Conky
 link .config/conky/conky_maia
 link .config/conky/conky1.10_shortcuts
+
+# Polybar
+link .config/polybar/config.ini
 
 
 # List packages

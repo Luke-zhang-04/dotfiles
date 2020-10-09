@@ -8,3 +8,4 @@
 .config/dunst/dunstrc linguist-language=INI
 
 *.conf linguist-detectable=true
+*.ini linguist-detectable=true
