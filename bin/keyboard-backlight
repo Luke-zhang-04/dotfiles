@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Toggles keyboard brightness
+
 VALUE=$(cat /sys/class/leds/smc::kbd_backlight/brightness)
 INCREMENT=32
 TOTAL=unset
