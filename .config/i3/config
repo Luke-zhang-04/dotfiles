@@ -37,8 +37,8 @@ set $sup Super_L
 # Some colours
 set $c_dark #05151a
 set $c_brown #5a3a35
-set $c_light #9999bb
-set $c_clear #00000000
+set $c_light #99b
+set $c_clear #0000
 set $sky #74919F
 
 # Color palette used for the terminal ( ~/.Xresources file )
@@ -84,7 +84,7 @@ set $ws5 5
 set $ws6 6
 set $ws7 7
 set $ws8 8
-set $ws9 "Discord"
+set $ws9 9
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -416,29 +416,31 @@ mode "$mode_gaps_outer" {
 #######
 # Bar #
 #######
-bar {
-    i3bar_command i3bar -t
-    status_command i3status
-    position bottom
-
-    bindsym button4 nop
-    bindsym button5 nop
-    font pango:bitstream-vera 9
-    strip_workspace_numbers no
-
-    colors {
-        background $c_clear
-        statusline $c_light
-        separator  $c_clear
-
-        # Class            border   backgr.  text
-        focused_workspace  $c_light $c_light $c_dark
-        active_workspace   $c_dark  $c_dark  $c_light
-        inactive_workspace $c_dark  $c_dark  $c_light
-        binding_mode       $c_dark  #2C2C2C  #F9FAF9
-        urgent_workspace   $c_dark  #FDF6E3  #E5201D
-    }
-}
+#bar {
+    # If you're using i3 bar, uncomment everything below
+    # i3bar_command i3bar -t
+    # status_command i3status
+    # position bottom
+    #
+    # b indsym button4 nop
+    # bindsym button5 nop
+    # font pango:bitstream-vera 9
+    # strip_workspace_numbers no
+    #
+    # colors {
+    #     background $c_clear
+    #     statusline $c_light
+    #     separator  $c_clear
+    #
+    #     # Class            border   backgr.  text
+    #     focused_workspace  $c_light $c_light $c_dark
+    #     active_workspace   $c_dark  $c_dark  $c_light
+    #     inactive_workspace $c_dark  $c_dark  $c_light
+    #     binding_mode       $c_dark  #2C2C2C  #F9FAF9
+    #     urgent_workspace   $c_dark  #FDF6E3  #E5201D
+#}
 
 # hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
+# bindsym $mod+m bar mode toggle
+
+exec --no-startup-id polybar main -c ~/.config/polybar/config.ini
