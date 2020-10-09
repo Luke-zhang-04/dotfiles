@@ -45,3 +45,7 @@ link .config/conky/conky_maia
 link .config/conky/conky1.10_shortcuts
 
 pacman -Qnqe > ./aur-packages
+
+NPMPackages="$(npm list -g --depth=0 --parseable=true | sed "s/\/usr\/lib\/node_modules\///g")"
+
+tail -n +2 <<< "$NPMPackages" > ./npm-packages
