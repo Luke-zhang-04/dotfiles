@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ "$1" == "on" ]]; then
+    notify-send "Notifs" "Do Not Disturb is On"
+    notify-send DUNST_COMMAND_PAUSE
+    echo "DND is on"
+elif [[ "$1" == "off" ]]; then
+    notify-send DUNST_COMMAND_RESUME
+    notify-send "Notifs" "Do Not Disturb is Off"
+    echo "DND is off"
+else
+    echo "First param must match off|on"
+    exit 1
+fi

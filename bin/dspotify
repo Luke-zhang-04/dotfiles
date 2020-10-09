@@ -1,0 +1,3 @@
+#!/bin/bash
+
+kdocker -q -o -l -i /usr/share/icons/Papirus/64x64/apps/spotify.svg -n Spotify spotify %U

@@ -12,6 +12,7 @@ mkdir -pv ./.config/omf
 mkdir -pv ./.config/conky
 mkdir -pv ./.config/polybar
 mkdir -pv ./.vim/colors/material-dark/vim
+mkdir -pv ./bin
 
 
 # Hard link a file from ~ to .
@@ -58,6 +59,9 @@ link .config/conky/conky1.10_shortcuts
 
 # Polybar
 link .config/polybar/config.ini
+
+# Bin
+ln ~/bin/* ./bin || true
 
 
 # List packages
