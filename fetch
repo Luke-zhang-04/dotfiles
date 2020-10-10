@@ -1,6 +1,19 @@
 #! /bin/bash
 # Get various "dotfiles" and move them around
 
+if [[ "$1" == "--force" ]]; then
+    rm -rfv ./.config
+    rm -rfv ./bin
+    rm -rfv ./.vim
+    rm -rfv ./.bashrc
+    rm -rfv ./.gitconfig
+    rm -rfv ./.ombrc
+    rm -rfv ./.vimrc
+    rm -rfv ./.xinitrc
+    rm -rfv ./.Xmodmap
+    rm -rfv ./.zshrc
+fi
+
 # Make directories
 mkdir -pv ./.config/i3
 mkdir -pv ./.config/dunst
