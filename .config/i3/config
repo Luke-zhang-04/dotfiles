@@ -136,8 +136,9 @@ floating_modifier $mod
 # Start a terminal
 bindsym $mod+Return exec terminal
 
-# Take a screenshot
-bindsym Ctrl+Shift+5 exec --no-startup-id "maim -usnlc 0.157,0.333,0.466,0.4 | xclip -selection clipboard -t image/png"
+# Take a screenshot:
+bindsym Ctrl+Shift+5 exec --no-startup-id ~/bin/screenshot xclip
+bindsym Ctrl+Shift+4 exec --no-startup-id ~/bin/screenshot
 
 # Kill focused window
 bindsym $mod+Shift+q kill
