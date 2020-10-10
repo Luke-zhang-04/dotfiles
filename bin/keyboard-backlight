@@ -4,14 +4,14 @@
 
 VALUE=$(cat /sys/class/leds/smc::kbd_backlight/brightness)
 INCREMENT=32
-TOTAL=unset
+TOTAL="unset"
 
 case $1 in
 up)
-    TOTAL=`expr $VALUE + $INCREMENT`
+    TOTAL="$((VALUE + INCREMENT))"
     ;;
 down)
-    TOTAL=`expr $VALUE - $INCREMENT`
+    TOTAL="$((VALUE - INCREMENT))"
     ;;
 full)
     TOTAL=255
