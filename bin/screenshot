@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ "$1" == "xclip" ]]; then
+    maim -usnlc 0.157,0.333,0.466,0.4 | xclip -selection clipboard -t image/png
+    notify-send "Maim" "Screenshot copied to clipboard"
+else
+    maim -usnlc 0.157,0.333,0.466,0.4 ~/Pictures/Screenshot-"$(date -Iseconds | cut -d'+' -f1)".png
+    notify-send "Maim" "Screenshot saved to ~/Pictures/Screenshot-$(date -Iseconds | cut -d'+' -f1).png"
+fi
