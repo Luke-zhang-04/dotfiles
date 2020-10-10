@@ -4,6 +4,10 @@
 
 [[ $- != *i* ]] && return
 
+battery_percentage() {
+    upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percentage" | awk '{print substr($2, 1, length($2)-1)}'
+}
+
 colors() {
     local fgc bgc vals seq0
 
@@ -351,7 +355,7 @@ lowercase() {
     for file ; do
         filename=${file##*/}
         case "$filename" in
-            */* ) dirname==${file%/*} ;;
+            */* ) dirname=${file%/*} ;;
             * ) dirname=.;;
         esac
 
