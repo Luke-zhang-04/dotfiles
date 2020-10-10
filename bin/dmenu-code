@@ -1,6 +1,6 @@
 #!/bin/bash
 
-selection="$(ls ~/Documents | dmenu -i -p "$1" -nf "#74919F" -nb "#05151a" -sf "#05151a" -sb "#74919F" -fn 'Bitstream Vera Sans')"
+selection="$(ls ~/Documents | dmenu -i -p "$1" -nf "#74919F" -nb "#05151a" -sf "#05151a" -sb "#74919F" -fn "Bitstream Vera Sans")"
 
 if [[ "$selection" == "" ]]; then
     true
