@@ -8,6 +8,21 @@
 - images/*
 
 ## Screenshots
+### Desktop
+![desk](./images/desk.png)
+
+### Stuff
+![Screenshots](./images/misc.png)
+
+### Terminals
+Bash, Zsh, and Fish from top to bottom
+![Terminals](./images/terminals.png)
+
+### Vim and Ranger
+![Vim and Ranger](./images/vim.png)
+
+### VSCode
+![VSCode](./images/code.png)
 
 ## Details
 
