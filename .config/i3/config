@@ -151,7 +151,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 # Start Applications
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+Shift+f exec --no-startup-id firefox
-bindsym $mod+c exec --no-startup-id code
+bindsym $mod+c exec --no-startup-id ~/bin/dmenu-code
 
 
 #############################
