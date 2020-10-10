@@ -9,5 +9,7 @@
 
 *.conf linguist-detectable=true
 *.ini linguist-detectable=true
+*.conf linguist-language=INI
+*.ini linguist-language=INI
 
-./bin/* linguist-detectable=trye
+./bin/* linguist-detectable=true
