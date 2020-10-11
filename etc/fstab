@@ -1,0 +1,16 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda3 UUID=3baf9eeb-0fbc-4aba-9e42-df8629f231c4
+LABEL=Archlinux     	/         	ext4      	rw,relatime	0 1
+
+# /dev/sda1 UUID=67E3-17ED
+LABEL=EFI           	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# Swap USB
+LABEL=swap              none            swap            defaults,x-systemd.device-timeout=5s,nofail 0 0
+
+# Built in Swap
+/swapfile swap swap defaults 0 0
+

@@ -12,6 +12,7 @@ if [[ "$1" == "--force" ]]; then
     rm -rfv ./.xinitrc
     rm -rfv ./.Xmodmap
     rm -rfv ./.zshrc
+    rm -rfv ./etc
 fi
 
 # Make directories
@@ -26,6 +27,8 @@ mkdir -pv ./.config/conky
 mkdir -pv ./.config/polybar
 mkdir -pv ./.vim/colors/material-dark/vim
 mkdir -pv ./bin
+mkdir -pv ./etc
+mkdir -pv ./etc/systemd/system
 
 
 # Hard link a file from ~ to .
@@ -78,6 +81,10 @@ ln ~/bin/* ./bin || true
 
 # Libinput
 link .config/libinput-gestures.conf
+
+# /etc
+cp -v /etc/systemd/system/powermgmt.service ./etc/systemd/system/powermgmt.service
+cp -v /etc/fstab ./etc/fstab
 
 
 # List packages

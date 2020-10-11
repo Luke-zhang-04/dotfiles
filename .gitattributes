@@ -9,7 +9,9 @@
 
 *.conf linguist-detectable=true
 *.ini linguist-detectable=true
+*.service linguist-detectable=true
 *.conf linguist-language=INI
 *.ini linguist-language=INI
+*.service linguist-language=INI
 
 ./bin/* linguist-detectable=true

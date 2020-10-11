@@ -1,0 +1,10 @@
+[unit]
+Description=Disable XCH1 and LID0 in /proc/acpi/wakeup
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c "echo XCH1 | sudo tee /proc/acpi/wakeup && echo LID0 | sudo tee /proc/acpi/wakeup"
+User=root
+
+[Install]
+WantedBy=multi-user.target
