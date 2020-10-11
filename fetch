@@ -84,7 +84,6 @@ link .config/libinput-gestures.conf
 
 # /etc
 cp -v /etc/systemd/system/powermgmt.service ./etc/systemd/system/powermgmt.service
-cp -v /etc/fstab ./etc/fstab
 
 
 # List packages

@@ -42,6 +42,13 @@ These are meant for ArchLinux with i3 and X11. If you try on something like Manj
 ## Wallpaper:
 [https://www.deviantart.com/mascaloona/art/Dakshin-641643859](https://www.deviantart.com/mascaloona/art/Dakshin-641643859)
 
+## Where does everything go?
+Pretty much everything goes in `~` or `/home/[username]`, with some execptions:
+- Anything in [Repository files](#Repository-files) is excluded
+- `./aur-packages` and `./npm-packages` are just plain text lists with packages to install. See [Details](#Details)
+- Anything in `./etc` should go into `/etc`. If you put them in `~/etc` it won't work
+    - `./etc/systemd/system/powermgmt.service` just allows the system to sleep without turning on right away
+
 ## Libinput?
 Libinput allows for swiping between workspaces. I sometimes find is useful.
 ![calm down](https://i.imgflip.com/2m0s2q.jpg)
