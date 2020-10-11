@@ -88,7 +88,7 @@ cp -v /etc/fstab ./etc/fstab
 
 
 # List packages
-pacman -Qnqe > ./aur-packages
+pacman -Qqe > ./aur-packages
 
 NPMPackages="$(npm list -g --depth=0 --parseable=true | sed "s/\/usr\/lib\/node_modules\///g")" # List NPM Pacakges
 tail -n +2 <<< "$NPMPackages" > ./npm-packages # Get rid of first line (/usr/lib)
