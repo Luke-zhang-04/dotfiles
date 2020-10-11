@@ -8,6 +8,7 @@ bash
 binutils
 bison
 broadcom-wl
+cmatrix
 conky
 curl
 discord
@@ -19,7 +20,6 @@ findutils
 firefox
 fish
 flex
-foliate
 gawk
 gcc
 geary
@@ -83,6 +83,7 @@ tcpdump
 texinfo
 tlp
 ttf-fira-code
+unzip
 vim
 vulkan-intel
 wget
@@ -143,4 +144,6 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xterm
+zip
 zsh
+zsh-autosuggestions
