@@ -12,20 +12,16 @@ set $name lukez
 # bindsym $mod+9 exec --no-startup-id i3lock-fancy
 
 # Autostart applications
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b --experimental-backends
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id conky -c /usr/share/conky/conky_maia
 exec --no-startup-id conky -c /usr/share/conky/conky1.10_shortcuts_maia
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 10 -locker i3lock-fancy
 exec --no-startup-id sudo /usr/bin/libinput-gestures -c ~/.config/libinput-gestures.conf
 exec --no-startup-id redshift
-exec_always --no-startup-id ff-theme-util
-exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id xrdb -load /home/$name/.Xresources
 
 
@@ -446,4 +442,5 @@ mode "$mode_gaps_outer" {
 # hide/unhide i3status bar
 # bindsym $mod+m bar mode toggle
 
+# If you're using polybar, uncomment this
 exec --no-startup-id polybar main -c ~/.config/polybar/config.ini
