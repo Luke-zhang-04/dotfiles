@@ -531,7 +531,7 @@ if [[ "$COLORTERM" == "truecolor" ]]; then
 fi
 
 alias pacman=yay
-neofetch
+alias docker="sudo docker"
 
 PATH=$PATH:~/node_modules/.bin
 PATH=$PATH:~/bin
@@ -539,3 +539,5 @@ PATH=$PATH:/bin
 PATH=$PATH:~/.local/bin
 
 source ~/.ombrc
+
+neofetch

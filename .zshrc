@@ -101,6 +101,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias pacman="yay"
+alias docker="sudo docker"
 
 PATH=$PATH:~/node_modules
 PATH=$PATH:~/bin

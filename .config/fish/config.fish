@@ -5,4 +5,6 @@ set PATH /bin $PATH
 set PATH ~/bin $PATH
 set PATH ~/.local/bin $PATH
 
+alias docker="sudo docker"
+
 neofetch
