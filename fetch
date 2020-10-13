@@ -91,3 +91,5 @@ pacman -Qqe > ./aur-packages
 
 NPMPackages="$(npm list -g --depth=0 --parseable=true | sed "s/\/usr\/lib\/node_modules\///g")" # List NPM Pacakges
 tail -n +2 <<< "$NPMPackages" > ./npm-packages # Get rid of first line (/usr/lib)
+
+pip list | awk '{print $1}' | sed -e '1,2d' > ./pip-packages

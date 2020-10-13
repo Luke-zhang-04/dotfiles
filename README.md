@@ -26,11 +26,13 @@ Bash, Zsh, and Fish from top to bottom
 
 ## Details
 
-`./npm-packages` and `./aur-packages` are just a list of packages
+`./npm-packages`, `./aur-packages`, and `./pip-packages` are just a list of packages
 
-For npm, you should be able to just `npm i -g $(cat ./npm-packages)`
+For NPM, you should be able to just `npm i -g $(cat ./npm-packages)`
 
 For AUR, you should be able to just `yay -S $(cat ./aur-packages)`
+
+For Pip, you should be able to just `pip install $(cat ./pip-packages)`
 
 ## Licensing
 Everything is 0BSD Licensed, except:
