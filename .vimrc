@@ -39,6 +39,10 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
+let dark="#0000"
+
 set background=dark
 
 colo material-dark
+
+highlight Normal ctermbg=none
