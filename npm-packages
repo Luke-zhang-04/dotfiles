@@ -4,6 +4,7 @@ node-gyp
 node-sass
 npm
 semver
+serverless
 themer
 typescript
 yarn

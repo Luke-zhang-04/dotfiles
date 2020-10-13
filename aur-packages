@@ -8,6 +8,7 @@ base
 bash
 binutils
 bison
+blueman
 broadcom-wl
 caffeine-ng
 cava
@@ -17,6 +18,7 @@ curl
 deno-bin
 discord
 dmenu
+docker
 dunst
 fakeroot
 file
@@ -30,6 +32,7 @@ gcc
 geary
 gettext
 git
+gnome-calculator
 gnome-keyring
 gnome-system-monitor
 gnome-weather
@@ -111,6 +114,7 @@ vulkan-intel
 wget
 which
 wmctrl
+xautolock
 xbindkeys
 xclip
 xdotool
