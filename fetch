@@ -86,8 +86,11 @@ link .config/libinput-gestures.conf
 cp -v /etc/systemd/system/powermgmt.service ./etc/systemd/system/powermgmt.service
 
 # Nighttab
-if [[ "$(ls ~/Downloads/nightTab-backup.json)" ]]; then
-    cp ~/Downloads/nightTab-backup.json ./nightTab-backup.json
+if [[ "$(ls ~/Downloads/nightTab-backup-minimal.json)" ]]; then
+    cp -v ~/Downloads/nightTab-backup-minimal.json ./nightTab-backup-minimal.json
+fi
+if [[ "$(ls ~/Downloads/nightTab-backup-wallpaper.json)" ]]; then
+    cp -v ~/Downloads/nightTab-backup-wallpaper.json ./nightTab-backup-wallpaper.json
 fi
 
 

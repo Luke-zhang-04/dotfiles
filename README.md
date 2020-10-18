@@ -34,7 +34,7 @@ For AUR, you should be able to just `yay -S $(cat ./aur-packages)`
 
 For Pip, you should be able to just `pip install $(cat ./pip-packages)`
 
-`./nightTab-backup` is a JSON data file for the [NightTab](https://github.com/zombieFox/nightTab) extension. You should be able to upload the file to get my NightTab theme.
+`./nightTab-backup-wallpaper.json` and `./nightTab-backup-minimal.json` are JSON data files for the [NightTab](https://github.com/zombieFox/nightTab) extension. You should be able to upload the file to get a NightTab theme.
 
 ## Licensing
 Everything is 0BSD Licensed, except:
