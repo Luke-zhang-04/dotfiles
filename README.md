@@ -34,6 +34,8 @@ For AUR, you should be able to just `yay -S $(cat ./aur-packages)`
 
 For Pip, you should be able to just `pip install $(cat ./pip-packages)`
 
+`./nightTab-backup` is a JSON data file for the [NightTab](https://github.com/zombieFox/nightTab) extension. You should be able to upload the file to get my NightTab theme.
+
 ## Licensing
 Everything is 0BSD Licensed, except:
 - `./bin/player-status` is unlicensed, which is pretty much equivalent

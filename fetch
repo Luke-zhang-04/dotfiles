@@ -85,6 +85,11 @@ link .config/libinput-gestures.conf
 # /etc
 cp -v /etc/systemd/system/powermgmt.service ./etc/systemd/system/powermgmt.service
 
+# Nighttab
+if [[ "$(ls ~/Downloads/nightTab-backup.json)" ]]; then
+    cp ~/Downloads/nightTab-backup.json ./nightTab-backup.json
+fi
+
 
 # List packages
 pacman -Qqe > ./aur-packages
