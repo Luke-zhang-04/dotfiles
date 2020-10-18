@@ -7,4 +7,8 @@ set PATH ~/.local/bin $PATH
 
 alias docker="sudo docker"
 
-neofetch
+if test -d "$PWD/.git"
+    onefetch
+else
+    neofetch
+end

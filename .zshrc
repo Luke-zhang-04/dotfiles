@@ -108,4 +108,8 @@ PATH=$PATH:~/bin
 PATH=$PATH:/bin
 PATH=$PATH:~/.local/bin
 
-neofetch
+if [[ "$(ls "$PWD"/.git)" ]]; then
+    onefetch
+else
+    neofetch
+fi

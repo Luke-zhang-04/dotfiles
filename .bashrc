@@ -540,4 +540,8 @@ PATH=$PATH:~/.local/bin
 
 source ~/.ombrc
 
-neofetch
+if [[ "$(ls "$PWD"/.git)" ]]; then
+    onefetch
+else
+    neofetch
+fi

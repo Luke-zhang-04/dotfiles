@@ -46,6 +46,7 @@ gtkcord3
 gucharmap
 gzip
 hideit.sh-git
+hourglass
 i3-gaps
 i3exit
 i3lock-fancy-git
@@ -75,6 +76,7 @@ networkmanager
 nitrogen
 nodejs
 npm
+onefetch
 openvpn-protonvpn
 pacman
 pamac-aur
