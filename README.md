@@ -36,6 +36,11 @@ For Pip, you should be able to just `pip install $(cat ./pip-packages)`
 
 `./nightTab-backup-wallpaper.json` and `./nightTab-backup-minimal.json` are JSON data files for the [NightTab](https://github.com/zombieFox/nightTab) extension. You should be able to upload the file to get a NightTab theme.
 
+## Terminal Themes
+- The Fish theme is [bobthefish](https://github.com/oh-my-fish/theme-bobthefish)
+- The Bash theme is [n5q-kitsune](https://github.com/n5q/kitsune-bash)
+- The Zsh theme is [Oxide](https://github.com/dikiaap/dotfiles/blob/master/.oh-my-zsh/themes/oxide.zsh-theme)
+
 ## Licensing
 Everything is 0BSD Licensed, except:
 - `./bin/player-status` is unlicensed, which is pretty much equivalent
