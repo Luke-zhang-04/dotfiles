@@ -1,6 +1,7 @@
 alsa-utils
 archlinux-wallpaper
 autoconf
+autojump
 automake
 aws-cli-v2-bin
 baobab
@@ -14,6 +15,8 @@ caffeine-ng
 cava
 cmatrix
 conky
+cpupower
+cpupower-gui
 curl
 deno-bin
 discord
@@ -84,6 +87,7 @@ papirus-icon-theme
 patch
 picom
 pkgconf
+pkgfile
 playerctl
 polkit-gnome
 polybar
@@ -97,6 +101,7 @@ python-pip
 ranger
 redshift-minimal
 reflector
+rptable-git
 ruby
 rxvt-unicode
 rxvt-unicode-terminfo
