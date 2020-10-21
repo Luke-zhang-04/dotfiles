@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ "$1" = "--help" ]; then
+    echo "FINDS DIRECTORY SIZES AND LISTS THEM FOR THE CURRENT DIRECTORY"
+    exit 0
+fi
+
+## FINDS DIRECTORY SIZES AND LISTS THEM FOR THE CURRENT DIRECTORY
+du -shx * .[a-zA-Z0-9_]* 2> /dev/null | grep -E '^ *[0-9.]*[MG]' | sort -n > /tmp/list
+grep -E '^ *[0-9.]*M' /tmp/list
+grep -E '^ *[0-9.]*G' /tmp/list
+rm -rf /tmp/list

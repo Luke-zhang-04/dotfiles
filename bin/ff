@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ "$1" = "--help" ]; then
+    echo "FIND A FILE WITH A PATTERN IN NAME"
+    exit 0
+fi
+
+## FIND A FILE WITH A PATTERN IN NAME
+find . -type f -iname "*$**" -ls

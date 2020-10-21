@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [[ "$1" == "--help" ]]; then
+    echo "Goes up many dirs as the number passed as argument, if none goes up by 1 by default"
+    exit 0
+fi
+
+# Goes up many dirs as the number passed as argument, if none goes up by 1 by default
+d=""
+limit=$1
+
+for ((i=1 ; i <= limit ; i++)); do
+    d=$d/..
+done
+
+d=$(echo $d | sed 's/^\///')
+
+if [[ -z "$d" ]]; then
+    d=..
+fi
+
+cd $d || exit 1

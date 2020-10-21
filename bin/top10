@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ "$1" = "--help" ]; then
+    echo "FIND TOP 10 COMMANDS IN HISTORY"
+    exit 0
+fi
+
+# copyright 2007 - 2010 Christopher Bratusek
+history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ "$1" = "--help" ]; then
+    echo "REMIND ME, ITS IMPORTANT!"
+    echo "usage: remindme <time> <text>"
+    echo "remindme 10m \"omg, the pizza\""
+    exit 0
+fi
+
+sleep "$1" && zenity --info --text "$2" &

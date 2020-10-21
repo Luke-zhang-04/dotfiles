@@ -21,12 +21,12 @@ off)
     ;;
 esac
 
-if [ $TOTAL == unset ]; then
+if [[ $TOTAL == unset ]]; then
     echo "Please specify up, down, full, or off"
     exit 1
 fi
 
-if [ $TOTAL -gt 255 ]; then TOTAL=255; fi
-if [ $TOTAL -lt 0 ]; then TOTAL=0; fi
+if [[ $TOTAL -gt 255 ]]; then TOTAL=255; fi
+if [[ $TOTAL -lt 0 ]]; then TOTAL=0; fi
 echo $TOTAL > /sys/class/leds/smc::kbd_backlight/brightness
 

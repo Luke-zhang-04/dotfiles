@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ "$1" == "--help" ]]; then
+    echo "FIND A FILE WITH PATTERN \$1 IN NAME AND EXECUTE \$2 ON IT"
+    exit 0
+fi
+
+## FIND A FILE WITH PATTERN $1 IN NAME AND EXECUTE $2 ON IT
+find . -type f -iname "*$**" -exec "${2: -file}" {} \;
