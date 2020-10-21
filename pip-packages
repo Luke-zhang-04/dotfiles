@@ -54,6 +54,7 @@ keystoneauth1
 keystonemiddleware
 kombu
 linecache2
+lit
 lxml
 lyricwikia
 Mako
