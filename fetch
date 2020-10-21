@@ -70,8 +70,7 @@ link .vim/colors/material-dark/README.md
 link .vim/colors/material-dark/vim/ThemerVim.vim
 
 # Conky
-link .config/conky/conky_maia
-link .config/conky/conky1.10_shortcuts
+link .config/conky/config
 
 # Polybar
 link .config/polybar/config.ini

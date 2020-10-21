@@ -17,8 +17,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id blueman-applet
-exec --no-startup-id conky -c ~/.config/conky/conky_maia
-exec --no-startup-id conky -c ~/.config/conky/conky1.10_shortcuts_maia
+exec --no-startup-id conky -c ~/.config/conky/config
 exec --no-startup-id xautolock -time 10 -locker i3lock-fancy
 exec --no-startup-id sudo /usr/bin/libinput-gestures -c ~/.config/libinput-gestures.conf
 exec --no-startup-id redshift
