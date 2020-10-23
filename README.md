@@ -39,6 +39,9 @@ I do not take responsibility if any of the files within this repository screw up
 ### VSCode
 ![VSCode](./images/code.png)
 
+### Firefox
+![Firefox](./images/firefox.png)
+
 ## Details
 
 `./npm-packages`, `./aur-packages`, and `./pip-packages` are just a list of packages
