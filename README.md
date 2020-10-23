@@ -1,11 +1,30 @@
 # Dotfiles
 
+## Table of Contents
+- [Repository Files](#Repository-files)
+- [Licensing](#Licensing)
+- [Disclamer](#Disclamer-of-Warranty)
+- [Screenshots](#Screenshots)
+- [Details](#Details)
+- [Terminal Themes](#Terminal-themes)
+- [Linux Distro](#Linux-Distro)
+- [Wallpaper](#Wallpaper)
+- [How to use](#Where-does-everything-go?)
+- [Libinput](#Libinput?)
+
 ## Repository files
 - README.md
 - .gitattributes
 - LICENSE
 - fetch
 - images/*
+
+## Licensing
+Everything is 0BSD Licensed, except:
+- `./bin/player-status` is unlicensed, which is pretty much equivalent
+
+## Disclamer of Warranty
+I do not take responsibility if any of the files within this repository screw up your system, even if used properly. While these configuration files work on my machine, it may mess up on yours. See the [License](./license) for more details.
 
 ## Screenshots
 ### Desktop
@@ -41,12 +60,8 @@ For Pip, you should be able to just `pip install $(cat ./pip-packages)`
 - The Bash theme is [n5q-kitsune](https://github.com/n5q/kitsune-bash)
 - The Zsh theme is [Oxide](https://github.com/dikiaap/dotfiles/blob/master/.oh-my-zsh/themes/oxide.zsh-theme)
 
-## Licensing
-Everything is 0BSD Licensed, except:
-- `./bin/player-status` is unlicensed, which is pretty much equivalent
-
 ## Linux Distro
-These are meant for ArchLinux with i3 and X11. If you try on something like Manjaro I'm not sure if they'll work
+These are meant for ArchLinux with i3 and X11. If you try on something like Manjaro they might work, but I can't be certain.
 
 ## Wallpaper:
 [https://www.deviantart.com/mascaloona/art/Dakshin-641643859](https://www.deviantart.com/mascaloona/art/Dakshin-641643859)
