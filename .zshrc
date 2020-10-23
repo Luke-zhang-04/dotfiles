@@ -108,7 +108,7 @@ PATH=$PATH:~/bin
 PATH=$PATH:/bin
 PATH=$PATH:~/.local/bin
 
-if [[ "$(ls "$PWD"/.git)" ]]; then
+if [[ -d "$PWD"/.git ]]; then
     onefetch
 else
     neofetch
