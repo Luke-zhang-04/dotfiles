@@ -9,8 +9,8 @@
 - [Terminal Themes](#Terminal-themes)
 - [Linux Distro](#Linux-Distro)
 - [Wallpaper](#Wallpaper)
-- [How to use](#Where-does-everything-go?)
-- [Libinput](#Libinput?)
+- [How to use](#Where-does-everything-go)
+- [Libinput](#Libinput)
 
 ## Repository files
 - README.md
@@ -32,10 +32,6 @@ I do not take responsibility if any of the files within this repository screw up
 
 ### Stuff
 ![Screenshots](./images/misc.png)
-
-### Terminals
-Bash, Zsh, and Fish from top to bottom
-![Terminals](./images/terminals.png)
 
 ### Vim and Ranger
 ![Vim and Ranger](./images/vim.png)
@@ -59,6 +55,9 @@ For Pip, you should be able to just `pip install $(cat ./pip-packages)`
 - The Fish theme is [bobthefish](https://github.com/oh-my-fish/theme-bobthefish)
 - The Bash theme is [n5q-kitsune](https://github.com/n5q/kitsune-bash)
 - The Zsh theme is [Oxide](https://github.com/dikiaap/dotfiles/blob/master/.oh-my-zsh/themes/oxide.zsh-theme)
+
+Bash, Zsh, and Fish from top to bottom
+![Terminals](./images/terminals.png)
 
 ## Linux Distro
 These are meant for ArchLinux with i3 and X11. If you try on something like Manjaro they might work, but I can't be certain.
