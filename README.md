@@ -15,6 +15,7 @@
 ## Repository files
 - README.md
 - .gitattributes
+- .gitignore
 - LICENSE
 - fetch
 - images/*
@@ -53,6 +54,8 @@ For AUR, you should be able to just `yay -S $(cat ./aur-packages)`
 For Pip, you should be able to just `pip install $(cat ./pip-packages)`
 
 `./nightTab-backup-wallpaper.json` and `./nightTab-backup-minimal.json` are JSON data files for the [NightTab](https://github.com/zombieFox/nightTab) extension. You should be able to upload the file to get a NightTab theme.
+
+Archlinux.txt is come cool ASCII art from `pastr.io`, which has been shut down. You can do `cat archlinux. txt >> /etc/issue` to have some cool ASCII art on startup.
 
 ## Terminal Themes
 - The Fish theme is [bobthefish](https://github.com/oh-my-fish/theme-bobthefish)

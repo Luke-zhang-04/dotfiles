@@ -7,12 +7,14 @@ aws-cli-v2-bin
 baobab
 base
 bash
+bash-pipes
 binutils
 bison
 blueman
 broadcom-wl
 caffeine-ng
 cava
+clang
 cmatrix
 conky
 cpupower
@@ -63,10 +65,12 @@ libtool
 libva-intel-driver
 linux
 linux-firmware
+lshw
 lxappearance
 m4
 maim
 make
+mariadb
 matcha-gtk-theme
 mpd
 mtools
@@ -85,6 +89,7 @@ pacman
 pamac-aur
 papirus-icon-theme
 patch
+pavucontrol
 picom
 pkgconf
 pkgfile
@@ -108,6 +113,7 @@ rxvt-unicode-terminfo
 sed
 shellcheck-bin
 sl
+spicetify-cli
 spotify
 sudo
 systemd-suspend-modules
