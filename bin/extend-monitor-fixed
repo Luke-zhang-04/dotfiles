@@ -1,0 +1,11 @@
+#!/bin/fish
+
+# set -o xtrace -e
+
+cvt 1920 1080 60 | grep -E "^Modeline" | python -c "print(input()[9:])"; xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync; xrandr --addmode HDMI1 1920x1080_60.00; xrandr --output HDMI1 --auto --left-of eDP1 --mode 1920x1080_60.00;
+
+nitrogen --restore
+pkill conky
+conky -c ~/.config/conky/config
+polybar -c ~/.config/polybar/config.ini HDMI1 & disown
+

@@ -1,0 +1,33 @@
+#!/bin/bash
+
+notifSent=0
+
+memTotalRaw="$(grep MemTotal /proc/meminfo)"
+read -ra memTotalArr -d '' <<<"$memTotalRaw"
+memTotal="${memTotalArr[1]}"
+
+while true
+do
+    memFreeRaw="$(grep MemFree /proc/meminfo)"
+
+    read -ra memFreeArr -d '' <<<"$memFreeRaw"
+
+    memFree="${memFreeArr[1]}"
+    memUsed=$((memTotal - memFree))
+    memUsedGb=$(echo "scale=2; $memUsed / 1048576" | bc)
+
+    # echo "$memTotal, $memFree, $memUsed, $memUsedGb"
+
+    if [[ "$memFree" -lt 150000 ]]; then
+        if [[ "$notifSent" == 0 ]]; then
+            notify-send --urgency=critical --app-name="RAM Watch" "LESS THAN 1GB OF RAM LEFT at ${memUsedGb}GB" --icon=/usr/share/icons/Papirus-Dark/32x32@2x/devices/gnome-dev-memory.svg
+
+            notifSent=1
+        fi
+    else
+        notifSent=0
+    fi
+
+    sleep 1
+done
+

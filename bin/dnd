@@ -2,15 +2,24 @@
 
 # Turns on or off dunst notifs
 
+cmd="/usr/bin/dunstctl"
+
 if [[ "$1" == "on" ]]; then
     notify-send "Notifs" "Do Not Disturb is On"
-    notify-send DUNST_COMMAND_PAUSE
+    "$cmd" set-paused true
     echo "DND is on"
 elif [[ "$1" == "off" ]]; then
-    notify-send DUNST_COMMAND_RESUME
     notify-send "Notifs" "Do Not Disturb is Off"
+    "$cmd" set-paused false
     echo "DND is off"
 else
-    echo "First param must match off|on"
-    exit 1
+    if [[ "$($cmd is-paused)" == "true" ]]; then
+        notify-send "Notifs" "Do Not Disturb is off"
+        echo "DND is off"
+    else
+        notify-send "Notifs" "Do Not Disturb is on"
+        echo "DND is on"
+    fi
+
+    /usr/bin/dunstctl set-paused toggle
 fi

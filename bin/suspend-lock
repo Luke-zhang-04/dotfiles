@@ -1,4 +1,3 @@
 #!/bin/sh
 
-/usr/bin/i3lock-fancy
-systemctl suspend
+betterlockscreen --lock dimblur --suspend -- --greeter-text="Welcome back, Luke"

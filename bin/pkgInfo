@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo expac -H M '%m\t%n' | sort -hr | fzf --border --preview 'pacman -Qil {3}' --bind 'enter:execute(pacman -Rns {3} --noconfirm)'
+

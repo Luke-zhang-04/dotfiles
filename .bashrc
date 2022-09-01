@@ -226,7 +226,7 @@ loadnvm() {
 source ~/.ombrc
 
 if [[ -d "$PWD/.git" ]]; then
-    onefetch
+    onefetch --show-logo auto
 else
     neofetch
 fi

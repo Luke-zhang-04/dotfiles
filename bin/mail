@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# /usr/bin/kdocker -q -o -l -i /usr/share/icons/Papirus/64x64/apps/geary.svg -n Mail
+/usr/bin/geary "$@"

@@ -4,6 +4,6 @@ selection="$(ls ~/Documents | dmenu -i -p "$1" -nf "#74919F" -nb "#05151a" -sf "
 
 if [[ "$selection" == "" ]]; then
     true
-else
-    code ~/Documents/"$selection"
+elif [[ -f "$HOME/Documents/$selection" ]]||[[ -d "$HOME/Documents/$selection" ]]; then
+    code "$HOME/Documents/$selection"
 fi

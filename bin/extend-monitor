@@ -1,0 +1,29 @@
+#!/bin/bash
+
+set -o xtrace
+
+height=1080
+width=1920
+refresh=60
+newMode="$(cvt $width $height $refresh | grep -E "^Modeline" | python -c "print(input()[9:])")"
+
+echo "$newMode"
+
+xrandr --newmode "$newMode"
+xrandr --addmode HDMI1 "${width}x${height}_${refresh}.00"
+xrandr --output HDMI1 --auto --left-of eDP1 --mode ${width}x${height}_${refresh}.00
+
+nitrogen --restore
+echo "If background is broken, run: nitrogen --force-setter=xinerama ~/Desktop/"
+
+sleep 3 # Wait 0.25 seconds before starting conky and polybar
+
+wait
+
+pkill -f conky
+polybar -c ~/.config/polybar/config.ini HDMI1 & disown
+
+sleep 1
+
+conky -c ~/.config/conky/config
+

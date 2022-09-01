@@ -5,9 +5,15 @@
     required = true
 [user]
     name = Luke-zhang-04
-    email = luke.zhang2004dev@gmail.com
-    signingkey = 61BCE27146B1B0B9
+    email = Luke_zhang_04@protonmail.com
+    signingkey = 53429218A4A5D080
 [gpg]
     program = gpg2
 [commit]
     gpgsign = true
+[core]
+	editor = vim
+[credential]
+	helper = cache --timeout=2628000
+[init]
+	defaultBranch = master

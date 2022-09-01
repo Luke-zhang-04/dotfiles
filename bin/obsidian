@@ -1,0 +1,3 @@
+#!/bin/sh
+exec /usr/bin/electron13 /usr/lib/obsidian/app.asar --no-sandbox "$@"
+
